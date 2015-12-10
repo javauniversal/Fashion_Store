@@ -17,48 +17,49 @@
 package zonaapp.co.fashionstore.Fragments;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import zonaapp.co.fashionstore.R;
 
-public class SuperAwesomeCardFragment extends Fragment {
+public class SuperAwesomeCardFragment extends BaseVolleyFragment {
 
-	private static final String ARG_POSITION = "position";
-	private int position;
-	private TextView textView;
-	public static SuperAwesomeCardFragment newInstance(int position) {
-		SuperAwesomeCardFragment f = new SuperAwesomeCardFragment();
-		Bundle b = new Bundle();
-		b.putInt(ARG_POSITION, position);
-		f.setArguments(b);
-		return f;
-	}
+    private int operador;
+
+	public static SuperAwesomeCardFragment newInstance(Bundle param1) {
+        SuperAwesomeCardFragment fragment = new SuperAwesomeCardFragment();
+        fragment.setArguments(param1);
+        return fragment;
+    }
+
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		position = getArguments().getInt(ARG_POSITION);
+        if (getArguments() != null) {
+            operador = getArguments().getInt("position");
+        }
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
         View rootView = inflater.inflate(R.layout.fragment_card,container,false);
-
-		textView = (TextView) rootView.findViewById(R.id.textView);
 
 		return rootView;
 	}
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+    }
 
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 
-		textView.setText("CARD " + position);
+
 
 	}
 

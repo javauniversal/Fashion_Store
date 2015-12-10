@@ -1072,10 +1072,11 @@ public abstract class MaterialNavigationDrawerCustom<Fragment> extends ActionBar
                 throw new RuntimeException("You should use only one type of Fragment");
 
             android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+
             if(oldFragment != null && oldFragment != fragment)
                 ft.remove((android.support.v4.app.Fragment) oldFragment);
 
-            if(!hasSavedInstanceState) // se non e' avvenuta una rotazione
+           // if(!hasSavedInstanceState) // se non e' avvenuta una rotazione
                 ft.replace(it.neokree.materialnavigationdrawer.R.id.frame_container, (android.support.v4.app.Fragment) fragment).commit();
         }
         else

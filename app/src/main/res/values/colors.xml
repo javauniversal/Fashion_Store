@@ -5,5 +5,7 @@
     <color name="colorAccent">#f82c2c</color>
     <color name="colorBlanco">#FFF</color>
     <color name="colorNegro">#000</color>
+    <color name="colorSinDatos">#fbc02d</color>
+    <color name="colorErrorConexion">#42a5f5</color>
 
 </resources>
