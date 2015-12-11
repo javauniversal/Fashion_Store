@@ -37,6 +37,29 @@ public class EntProduct {
     @SerializedName("galeria")
     private List<EntGalery> galeryList;
 
+    public EntProduct(int ID, String post_title, String post_type, String post_status, String post_content, String post_excerpt, String post_name, List<EntCategory> categoryList, List<EntAttributes> attributesList, List<EntGalery> galeryList) {
+        this.ID = ID;
+        this.post_title = post_title;
+        this.post_type = post_type;
+        this.post_status = post_status;
+        this.post_content = post_content;
+        this.post_excerpt = post_excerpt;
+        this.post_name = post_name;
+        this.categoryList = categoryList;
+        this.attributesList = attributesList;
+        this.galeryList = galeryList;
+    }
+
+    public static List<EntProduct> getProductList() {
+        return productList;
+    }
+
+    public static void setProductList(List<EntProduct> productList) {
+        EntProduct.productList = productList;
+    }
+
+    public static List<EntProduct> productList;
+
     public int getID() {
         return ID;
     }

@@ -2,10 +2,12 @@
 <resources>
     <color name="colorPrimary">#ff26ff</color>
     <color name="colorPrimaryDark">#ff26ff</color>
+    <color name="colorPrimarySecundari">#FFA6FF</color>
     <color name="colorAccent">#f82c2c</color>
     <color name="colorBlanco">#FFF</color>
     <color name="colorNegro">#000</color>
     <color name="colorSinDatos">#fbc02d</color>
     <color name="colorErrorConexion">#42a5f5</color>
+    <color name="colorFondoApp">#E6E6E6</color>
 
 </resources>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import zonaapp.co.fashionstore.Fragments.FragmentCarridoCompras;
+import zonaapp.co.fashionstore.Fragments.FragmentCategorias;
 import zonaapp.co.fashionstore.Fragments.FragmentIndex;
 import zonaapp.co.fashionstore.Fragments.FragmentPromociones;
 import zonaapp.co.fashionstore.R;
@@ -21,10 +22,10 @@ public class Accounts extends MaterialNavigationDrawerCustom  {
 
         // create sections
         this.addSection(newSection("Ofertas", R.drawable.ic_store_black_24dp, new FragmentPromociones()));
+        this.addSection(newSection("Categoria", R.drawable.ic_playlist_play_black_18dp, new FragmentCategorias()));
         this.addSection(newSection("Carrito de Compra", R.drawable.ic_shopping_basket_black_24dp, new FragmentCarridoCompras()));
         this.addSection(newSection("Tiendas", R.drawable.ic_explore_black_24dp, new FragmentIndex()));
         this.addSection(newSection("Soporte en Línea", R.drawable.ic_people_black_24dp, new FragmentIndex()));
-        this.addSection(newSection("Ajustes", R.drawable.ic_settings_black_24dp, new FragmentIndex()));
         this.addSection(newSection("Quienes Somos", R.drawable.ic_person_pin_black_24dp, new FragmentIndex()));
 
         //this.addSection(newSection("Quienes Somos", R.drawable.ic_pin_drop_black_48dp, new Intent(this, ActMaps.class)));

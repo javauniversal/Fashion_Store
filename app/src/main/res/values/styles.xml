@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="NoHeaderLight">
@@ -23,6 +23,23 @@
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">#FFFFFF</item>
         <item name="drawerType">@integer/DRAWERTYPE_ACCOUNTS</item>
+    </style>
+
+    <style name="BrandButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+    </style>
+
+    <style name="CustomTextViewDescrip" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="CustomTextView" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
     </style>
 
 </resources>

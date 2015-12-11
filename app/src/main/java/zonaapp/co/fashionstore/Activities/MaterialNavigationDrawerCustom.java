@@ -1076,7 +1076,7 @@ public abstract class MaterialNavigationDrawerCustom<Fragment> extends ActionBar
             if(oldFragment != null && oldFragment != fragment)
                 ft.remove((android.support.v4.app.Fragment) oldFragment);
 
-           // if(!hasSavedInstanceState) // se non e' avvenuta una rotazione
+           if(!hasSavedInstanceState) // se non e' avvenuta una rotazione
                 ft.replace(it.neokree.materialnavigationdrawer.R.id.frame_container, (android.support.v4.app.Fragment) fragment).commit();
         }
         else

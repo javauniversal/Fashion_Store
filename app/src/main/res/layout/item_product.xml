@@ -7,7 +7,7 @@
 
     <android.support.v7.widget.CardView
         android:id="@+id/card_view"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         card_view:cardCornerRadius="4dp"
         android:layout_centerHorizontal="true">
@@ -15,14 +15,53 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView"
-                android:scaleType="fitXY"
-                android:src="@drawable/icon_"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgProduct"
+                    android:src="@drawable/icon_"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressBar"
+                    android:background="@drawable/buttonroundedabako"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OFERTA"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        android:id="@+id/gdfg"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_gravity="center_horizontal" />
+
+                </FrameLayout>
+            </RelativeLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -33,11 +72,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="19sp"
+                android:textSize="15sp"
                 android:text="Nombre"
                 android:textStyle="bold"
                 android:textColor="@color/colorNegro"
-                android:id="@+id/textView"
+                android:id="@+id/txtNombreProduct"
                 android:layout_marginTop="9dp"
                 android:layout_gravity="center_horizontal" />
 
@@ -47,8 +86,9 @@
                 android:text="$ 200.000"
                 android:visibility="gone"
                 android:id="@+id/precio_normal"
-                android:padding="3dp"
-                android:layout_marginTop="9dp"
+                android:padding="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
                 android:textColor="@color/colorNegro"
                 android:layout_gravity="center_horizontal" />
 
@@ -56,18 +96,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="$ 200.000"
-                android:padding="3dp"
+                android:padding="1dp"
                 android:visibility="gone"
                 android:textColor="@color/colorNegro"
                 android:id="@+id/precio_oferta"
                 android:layout_marginTop="1dp"
+                android:layout_marginLeft="5dp"
                 android:layout_gravity="center_horizontal" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Añadir al carrito"
-                android:id="@+id/button"
+                android:id="@+id/btnAddCarrito"
+                style="@style/BrandButtonStyle"
                 android:layout_marginTop="9dp"
                 android:layout_gravity="center_vertical" />
 
