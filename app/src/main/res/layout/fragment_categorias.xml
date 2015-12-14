@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@color/colorFondoApp"
     tools:context="zonaapp.co.fashionstore.Fragments.FragmentCategorias">
 
     <android.support.v7.widget.RecyclerView
