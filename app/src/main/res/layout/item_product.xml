@@ -29,7 +29,8 @@
                     android:src="@drawable/icon_"
                     android:scaleType="centerCrop"
                     android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/app_name" />
 
                 <ProgressBar
                     android:layout_width="match_parent"
@@ -50,7 +51,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="OFERTA"
+                        android:text="@string/oferta"
                         android:layout_margin="10dp"
                         android:visibility="visible"
                         android:id="@+id/gdfg"
@@ -73,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:text="Nombre"
+                android:text="@string/nombre"
                 android:textStyle="bold"
                 android:textColor="@color/colorNegro"
                 android:id="@+id/txtNombreProduct"
@@ -83,7 +84,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="$ 200.000"
+                android:text="@string/_200_000"
                 android:visibility="gone"
                 android:id="@+id/precio_normal"
                 android:padding="1dp"
@@ -95,7 +96,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="$ 200.000"
+                android:text="@string/_200_000"
                 android:padding="1dp"
                 android:visibility="gone"
                 android:textColor="@color/colorNegro"
@@ -107,7 +108,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Añadir al carrito"
+                android:text="@string/a_adir_al_carrito"
                 android:id="@+id/btnAddCarrito"
                 style="@style/BrandButtonStyle"
                 android:layout_marginTop="9dp"
